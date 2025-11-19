@@ -19,9 +19,7 @@ public class RegFormTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
-        // === EDIT THIS PATH TO WHERE YOUR frugal-registration/index.html IS LOCATED ===
-        // Example Windows: "file:///C:/Users/Nazil/frugal-registration/index.html"
-        // Example Linux/Mac: "file:///home/yourname/frugal-registration/index.html"
+
         baseUrl = "file:///D:/WEB%20DEVELOPMENT/projectsthatareinresume/frugal-registrationform/index.html";
         ;
         new File("screenshots").mkdirs();
