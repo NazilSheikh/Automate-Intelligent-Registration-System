@@ -255,10 +255,6 @@ success-state.png
 ## 🤝 Developed By
 
 ##  👤 ** Nazil Sheikh **
-Candidate — Frugal Testing Software Engineer Role
-📧 Email: Add your email if you want
-🔗 GitHub: Add your GitHub profile link
-🔗 LinkedIn: Add your LinkedIn link
 
 ---
 
