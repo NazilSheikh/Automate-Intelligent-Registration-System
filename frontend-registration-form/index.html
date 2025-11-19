@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Registration | Frugal Testing</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="brand">Frugal Testing — Registration</h1>
+
+    <form id="regForm" novalidate>
+      <div class="grid">
+        <div class="field">
+          <label for="firstName">First Name <span class="req">*</span></label>
+          <input id="firstName" name="firstName" required />
+          <small class="error" id="err-firstName"></small>
+        </div>
+
+        <div class="field">
+          <label for="lastName">Last Name <span class="req">*</span></label>
+          <input id="lastName" name="lastName" required />
+          <small class="error" id="err-lastName"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" required />
+          <small class="error" id="err-email"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone (with country code) <span class="req">*</span></label>
+          <input id="phone" name="phone" placeholder="+91xxxxxxxxxx" required />
+          <small class="error" id="err-phone"></small>
+        </div>
+
+        <div class="field">
+          <label for="age">Age</label>
+          <input id="age" name="age" type="number" min="1" max="120"/>
+        </div>
+
+        <div class="field">
+          <label>Gender <span class="req">*</span></label>
+          <div class="radios">
+            <label><input type="radio" name="gender" value="Male" /> Male</label>
+            <label><input type="radio" name="gender" value="Female" /> Female</label>
+            <label><input type="radio" name="gender" value="Other" /> Other</label>
+          </div>
+          <small class="error" id="err-gender"></small>
+        </div>
+
+        <div class="field full">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="2"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="country">Country</label>
+          <select id="country">
+            <option value="">— Select Country —</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="state">State</label>
+          <select id="state">
+            <option value="">— Select State —</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="city">City</label>
+          <select id="city">
+            <option value="">— Select City —</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" />
+          <small id="pwd-strength" class="strength">Password strength: —</small>
+          <small class="error" id="err-password"></small>
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" type="password" />
+          <small class="error" id="err-confirmPassword"></small>
+        </div>
+
+        <div class="field full terms">
+          <label><input id="terms" type="checkbox" /> I accept Terms &amp; Conditions <span class="req">*</span></label>
+          <small class="error" id="err-terms"></small>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="submitBtn" type="submit" disabled>Submit</button>
+        <button id="resetBtn" type="button" class="ghost">Reset</button>
+      </div>
+
+      <div id="alert" class="alert hide"></div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

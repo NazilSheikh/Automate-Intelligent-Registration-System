@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="FrugalRegistrationSuite">
+    <test name="RegFormTests">
+        <classes>
+            <class name="frugal.RegFormTest"/>
+        </classes>
+    </test>
+</suite>
